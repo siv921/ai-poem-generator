@@ -4,32 +4,40 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fjalla+One&family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Condensed+One&family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
+    <div class="container">
     <header>
-      <h1>Poem Generator</h1>
+      <h1>AI Poem Generator</h1>
     </header>
 
     <main>
+        <div class="main">
       <form>
         <input
           type="text"
-          placeholder="Enter the topic of your poem"
+          placeholder="Enter the topic of your poem here"
           required
           autofocus
           autocomplete="off"
+          class = "text-input"
         />
-        <input type="submit" value="Generate Poem" />
+        <input type="submit" value="Generate Poem" class="submit" />
       </form>
       <p>
-        No man is an island, Entire of itself, Every man is a piece of the
+       <div class="poem">No man is an island, Entire of itself, Every man is a piece of the
         continent, A part of the main. If a clod be washed away by the sea,
         Europe is the less. As well as if a promontory were. As well as if a
         manor of thy friend’s Or of thine own were: Any man’s death diminishes
         me, Because I am involved in mankind, And therefore never send to know
         for whom the bell tolls; It tolls for thee.
+        </div> 
       </p>
+      </div>
     </main>
     <footer>
       Coded by
@@ -43,6 +51,7 @@
         >Netlify.</a
       >
     </footer>
+    </div>
     <script src="src/script.js"></script>
   </body>
 </html>
