@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Poem Generator</title>
-
+       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
       <form id="poem-generator-form">
         <input
           type="text"
-          placeholder="Enter the topic of your poem here"
+          placeholder="Enter the topic of your poem here..."
           required
           autofocus
           autocomplete="off"
@@ -30,10 +30,10 @@
         />
         <input type="submit" value="Generate Poem" class="submit" id="submit-input" />
       </form>
-      <p>
-       <div class="poem" id="poem">
-       <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> </div> 
-      </p>
+      <small> ie. Flowers, London, Cheeseburger. </small>
+      <p id="hide" class="hidden">
+       <div class="poem hidden" id="poem"> </div> 
+       </p>
     </main>
     <footer>
       Coded by

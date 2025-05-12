@@ -14,7 +14,8 @@ function poemTopicPrompt(topic) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let waitMessage = document.querySelector("#poem");
-  waitMessage.innerHTML = `Please wait, I'm thinking of a good one.`;
+  waitMessage.classList.remove("hidden");
+  waitMessage.innerHTML = `<div class="blink"> ⏳ Please wait, I'm thinking of a good one. </div>`;
   axios.get(apiUrl).then(generatePoem);
 }
 
